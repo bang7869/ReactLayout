@@ -9,7 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+
+        <!--        android:screenOrientation="fullSensor" -->
+        <!--        화면방향을 고정시키고 싶을 때 사용 defalut : fullSensor-->
+
+        <!--        android:configChanges-->
+        <!--        screenSize : 앱의 화면방향이 전환 될 때 앱이 다시 실행되지 않게 해줌 (13버전부터 적용가능)-->
+        <!--        orientation : 앱의 화면방향이 전환 될 때 앱이 다시 실행되지 않게 해줌 -->
+        <!--        keyboardHidden : 키보드 가용성이 변경되었을 때 앱이 다시 실행되지 않게 해줌 -->
+        <!--        앱에서 구성 변경을 수동으로 처리하려면 orientation|screenSize 를 같이 적용 하면된다.-->
+        <!--        그럼 onConfigurationChanged을 받을 수 있다.-->
+        <!--        앱에서 구성 변경을 자동으로 처리하려면 orientation|keyboardHidden 를 같이 적용 하면된다.-->
+        <!--        그럼 액티비티는 재생성된다.-->
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
