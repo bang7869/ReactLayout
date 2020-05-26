@@ -21,6 +21,11 @@ android {
         }
     }
 
+    lintOptions{
+        disable 'MissingDefaultResource'
+        // res - layout 에 default layout 이 없을 때 경고해주는 문구를 ignore 해준다.
+    }
+
 }
 
 dependencies {

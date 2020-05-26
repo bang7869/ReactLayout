@@ -11,6 +11,10 @@
         android:theme="@style/AppTheme">
 
 
+        <!--        android:screenOrientation="fullSensor" -->
+        <!--        화면방향을 고정시키고 싶을 때 사용 defalut : fullSensor-->
+
+        <!--        android:configChanges-->
         <!--        screenSize : 앱의 화면방향이 전환 될 때 앱이 다시 실행되지 않게 해줌 (13버전부터 적용가능)-->
         <!--        orientation : 앱의 화면방향이 전환 될 때 앱이 다시 실행되지 않게 해줌 -->
         <!--        keyboardHidden : 키보드 가용성이 변경되었을 때 앱이 다시 실행되지 않게 해줌 -->
